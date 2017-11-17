@@ -16,7 +16,10 @@
 		D88AE6EF1FB0114100FF0A22 /* Pagorn_Resume_iOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D88AE6ED1FB0114100FF0A22 /* Pagorn_Resume_iOS.xcdatamodeld */; };
 		D88AE6F11FB0114100FF0A22 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D88AE6F01FB0114100FF0A22 /* Assets.xcassets */; };
 		D88AE6F41FB0114100FF0A22 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D88AE6F21FB0114100FF0A22 /* LaunchScreen.storyboard */; };
-		D8981D6B1FBEBCD80045D572 /* ActivityTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8981D6A1FBEBCD80045D572 /* ActivityTableViewController.swift */; };
+		D8981D6B1FBEBCD80045D572 /* ActivityListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8981D6A1FBEBCD80045D572 /* ActivityListTableViewController.swift */; };
+		D8981D6D1FBEEA0B0045D572 /* ActivityListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8981D6C1FBEEA0B0045D572 /* ActivityListTableViewCell.swift */; };
+		D8981D701FBEF22E0045D572 /* ActivityListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8981D6F1FBEF22E0045D572 /* ActivityListViewModel.swift */; };
+		D8981D721FBF14340045D572 /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8981D711FBF14340045D572 /* test.swift */; };
 		D8B4A3E71FBC4F5500017C62 /* skill.json in Resources */ = {isa = PBXBuildFile; fileRef = D8B4A3E41FBC4F5500017C62 /* skill.json */; };
 		D8B4A3E81FBC4F5500017C62 /* work_experience.json in Resources */ = {isa = PBXBuildFile; fileRef = D8B4A3E51FBC4F5500017C62 /* work_experience.json */; };
 		D8B4A3E91FBC4F5500017C62 /* activity.json in Resources */ = {isa = PBXBuildFile; fileRef = D8B4A3E61FBC4F5500017C62 /* activity.json */; };
@@ -38,7 +41,10 @@
 		D88AE6F01FB0114100FF0A22 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D88AE6F31FB0114100FF0A22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D88AE6F51FB0114100FF0A22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D8981D6A1FBEBCD80045D572 /* ActivityTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityTableViewController.swift; sourceTree = "<group>"; };
+		D8981D6A1FBEBCD80045D572 /* ActivityListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityListTableViewController.swift; sourceTree = "<group>"; };
+		D8981D6C1FBEEA0B0045D572 /* ActivityListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityListTableViewCell.swift; sourceTree = "<group>"; };
+		D8981D6F1FBEF22E0045D572 /* ActivityListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityListViewModel.swift; sourceTree = "<group>"; };
+		D8981D711FBF14340045D572 /* test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
 		D8B4A3E41FBC4F5500017C62 /* skill.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = skill.json; sourceTree = "<group>"; };
 		D8B4A3E51FBC4F5500017C62 /* work_experience.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = work_experience.json; sourceTree = "<group>"; };
 		D8B4A3E61FBC4F5500017C62 /* activity.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = activity.json; sourceTree = "<group>"; };
@@ -98,8 +104,19 @@
 				D88AE6F21FB0114100FF0A22 /* LaunchScreen.storyboard */,
 				D88AE6F51FB0114100FF0A22 /* Info.plist */,
 				D88AE6ED1FB0114100FF0A22 /* Pagorn_Resume_iOS.xcdatamodeld */,
+				D8981D711FBF14340045D572 /* test.swift */,
 			);
 			path = "Pagorn-Resume-iOS";
+			sourceTree = "<group>";
+		};
+		D8981D6E1FBEEAE70045D572 /* ActivityPage */ = {
+			isa = PBXGroup;
+			children = (
+				D8981D6A1FBEBCD80045D572 /* ActivityListTableViewController.swift */,
+				D8981D6C1FBEEA0B0045D572 /* ActivityListTableViewCell.swift */,
+				D8981D6F1FBEF22E0045D572 /* ActivityListViewModel.swift */,
+			);
+			path = ActivityPage;
 			sourceTree = "<group>";
 		};
 		D8B4A3E11FBC3D8900017C62 /* Service */ = {
@@ -116,7 +133,7 @@
 		D8B4A3E21FBC4DCE00017C62 /* Module */ = {
 			isa = PBXGroup;
 			children = (
-				D8981D6A1FBEBCD80045D572 /* ActivityTableViewController.swift */,
+				D8981D6E1FBEEAE70045D572 /* ActivityPage */,
 			);
 			path = Module;
 			sourceTree = "<group>";
@@ -169,12 +186,13 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 0910;
 				ORGANIZATIONNAME = plagorn;
 				TargetAttributes = {
 					D88AE6E21FB0114100FF0A22 = {
 						CreatedOnToolsVersion = 8.3;
 						DevelopmentTeam = UC97B67PD8;
+						LastSwiftMigration = 0910;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -221,13 +239,13 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Pagorn-Resume-iOS/Pods-Pagorn-Resume-iOS-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/PKHUD/PKHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PKHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -274,14 +292,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D8981D6B1FBEBCD80045D572 /* ActivityTableViewController.swift in Sources */,
+				D8981D6B1FBEBCD80045D572 /* ActivityListTableViewController.swift in Sources */,
 				D85970531FBC85E000751A17 /* Activity.swift in Sources */,
 				D88AE6EF1FB0114100FF0A22 /* Pagorn_Resume_iOS.xcdatamodeld in Sources */,
 				D85970511FBC792400751A17 /* WorkExperience.swift in Sources */,
 				D88AE6E91FB0114100FF0A22 /* ViewController.swift in Sources */,
+				D8981D701FBEF22E0045D572 /* ActivityListViewModel.swift in Sources */,
 				D8B4A3EB1FBC4F6100017C62 /* APIService.swift in Sources */,
 				D85970551FBC867F00751A17 /* Skill.swift in Sources */,
+				D8981D6D1FBEEA0B0045D572 /* ActivityListTableViewCell.swift in Sources */,
 				D88AE6E71FB0114100FF0A22 /* AppDelegate.swift in Sources */,
+				D8981D721FBF14340045D572 /* test.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,7 +338,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -325,7 +348,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -348,7 +375,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -368,7 +395,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -376,7 +405,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -393,7 +426,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -412,7 +445,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "app.plagorn.Pagorn-Resume-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -426,7 +460,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "app.plagorn.Pagorn-Resume-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};

@@ -1,5 +1,5 @@
 //
-//  ActivityTableViewController.swift
+//  ActivityListTableViewController.swift
 //  Pagorn-Resume-iOS
 //
 //  Created by Pagorn Petchnukulkait on 11/17/2560 BE.
@@ -10,16 +10,26 @@ import UIKit
 import PKHUD
 
 
-class ActivityTableViewController: UITableViewController {
+class ActivityListTableViewController: UITableViewController {
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        initView()
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
+    }
+    
+    func initView() {
+        
+        tableView.estimatedRowHeight = 174
+        tableView.rowHeight = UITableViewAutomaticDimension
     }
 
     override func didReceiveMemoryWarning() {

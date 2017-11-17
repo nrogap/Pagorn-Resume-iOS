@@ -4,20 +4,23 @@
                 "id": 1,
                 "name": "National Software Contest 2014",
                 "round": "Proposal Round",
-                "description": "PhotoGraph Analyzer an application generate equation by graph photo, and plot a graph by equation. (Android Native)"
+                "description": "PhotoGraph Analyzer an application generate equation by graph photo, and plot a graph by equation. (Android Native)",
+                "cover_url": "https://cdn.pixabay.com/photo/2015/12/04/14/05/code-1076536__340.jpg"
                 
                 },
                 {
                 "id": 2,
                 "name": "National Software Contest 2015",
                 "round": "Final Round",
-                "description": "MissionZ a location-base game in Android that inspire people to exercise with play game. (Android Native)"
+                "description": "MissionZ a location-base game in Android that inspire people to exercise with play game. (Android Native)",
+                "cover_url": "https://pixabay.com/en/computer-computer-code-programming-1836330/"
                 },
                 {
                 "id": 3,
                 "name": "National Software Contest 2016",
                 "round": "Proposal Round",
-                "description": "MissionZ a location-base game in Android that inspire people to exercise with play game. (Unity3D with C# script)"
+                "description": "MissionZ a location-base game in Android that inspire people to exercise with play game. (Unity3D with C# script)",
+                "cover_url": "https://pixabay.com/en/code-coding-computer-data-desktop-1839877/"
                 }
                 ]
 }

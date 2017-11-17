@@ -17,4 +17,5 @@ struct Activity: Codable {
     let name: String
     let round: String?
     let description: String
+    let cover_url: String
 }

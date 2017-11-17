@@ -58,16 +58,16 @@
             </objects>
             <point key="canvasLocation" x="449" y="-712"/>
         </scene>
-        <!--Item-->
+        <!--Activity-->
         <scene sceneID="V4p-d9-fzT">
             <objects>
-                <tableViewController id="SZz-RJ-J3s" customClass="ActivityTableViewController" customModule="Pagorn_Resume_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="Activity" id="SZz-RJ-J3s" customClass="ActivityTableViewController" customModule="Pagorn_Resume_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="2oo-Rt-c8R">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ActivityCellIdentifier" rowHeight="174" id="f4k-6h-CiO">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ActivityCellIdentifier" rowHeight="174" id="f4k-6h-CiO" customClass="ActivityListTableViewCell" customModule="Pagorn_Resume_iOS" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="174"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="f4k-6h-CiO" id="o8b-AX-LIm">
@@ -75,13 +75,13 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vYX-Vl-0Pa">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="173.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="174"/>
                                         </imageView>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ffp-6y-poM">
                                             <rect key="frame" x="0.0" y="107.5" width="375" height="66"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="National Software Contest 2014" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mRZ-iu-4Dy">
-                                                    <rect key="frame" x="8" y="8" width="243" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mRZ-iu-4Dy">
+                                                    <rect key="frame" x="8" y="8" width="33.5" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="fjf-u2-J21"/>
                                                     </constraints>
@@ -89,7 +89,7 @@
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Proposal Round" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L3D-rF-DUA">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Round" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L3D-rF-DUA">
                                                     <rect key="frame" x="8" y="37" width="359" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="ddk-Hz-POf"/>
@@ -122,6 +122,11 @@
                                         <constraint firstAttribute="trailing" secondItem="ffp-6y-poM" secondAttribute="trailing" id="uoE-ec-55c"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="imageViewCover" destination="vYX-Vl-0Pa" id="c0b-05-0NT"/>
+                                    <outlet property="labelRound" destination="L3D-rF-DUA" id="Vnb-Lb-YgJ"/>
+                                    <outlet property="labelTitle" destination="mRZ-iu-4Dy" id="tM7-HX-5kM"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>

@@ -1,15 +1,17 @@
 PODS:
-  - Alamofire (4.5.1)
   - PKHUD (5.0.0)
+  - SDWebImage (4.2.2):
+    - SDWebImage/Core (= 4.2.2)
+  - SDWebImage/Core (4.2.2)
 
 DEPENDENCIES:
-  - Alamofire
   - PKHUD
+  - SDWebImage
 
 SPEC CHECKSUMS:
-  Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
   PKHUD: 3c001512c6e002091184197a8de7a20420786e3b
+  SDWebImage: 89a9d32cd520bbb46eb14e541d5109b3564af198
 
-PODFILE CHECKSUM: 3d24ad41156ace80181f33744a60b0aca1f91318
+PODFILE CHECKSUM: 4fd5b53e0bcbfdf6be0437de052891268f6ebc36
 
 COCOAPODS: 1.3.1
