@@ -7,15 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D85970511FBC792400751A17 /* WorkExperience.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85970501FBC792400751A17 /* WorkExperience.swift */; };
+		D85970531FBC85E000751A17 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85970521FBC85E000751A17 /* Activity.swift */; };
+		D85970551FBC867F00751A17 /* Skill.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85970541FBC867F00751A17 /* Skill.swift */; };
 		D88AE6E71FB0114100FF0A22 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D88AE6E61FB0114100FF0A22 /* AppDelegate.swift */; };
 		D88AE6E91FB0114100FF0A22 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D88AE6E81FB0114100FF0A22 /* ViewController.swift */; };
 		D88AE6EC1FB0114100FF0A22 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D88AE6EA1FB0114100FF0A22 /* Main.storyboard */; };
 		D88AE6EF1FB0114100FF0A22 /* Pagorn_Resume_iOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D88AE6ED1FB0114100FF0A22 /* Pagorn_Resume_iOS.xcdatamodeld */; };
 		D88AE6F11FB0114100FF0A22 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D88AE6F01FB0114100FF0A22 /* Assets.xcassets */; };
 		D88AE6F41FB0114100FF0A22 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D88AE6F21FB0114100FF0A22 /* LaunchScreen.storyboard */; };
+		D8B4A3E71FBC4F5500017C62 /* skill.json in Resources */ = {isa = PBXBuildFile; fileRef = D8B4A3E41FBC4F5500017C62 /* skill.json */; };
+		D8B4A3E81FBC4F5500017C62 /* work_experience.json in Resources */ = {isa = PBXBuildFile; fileRef = D8B4A3E51FBC4F5500017C62 /* work_experience.json */; };
+		D8B4A3E91FBC4F5500017C62 /* activity.json in Resources */ = {isa = PBXBuildFile; fileRef = D8B4A3E61FBC4F5500017C62 /* activity.json */; };
+		D8B4A3EB1FBC4F6100017C62 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B4A3EA1FBC4F6100017C62 /* APIService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D85970501FBC792400751A17 /* WorkExperience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkExperience.swift; sourceTree = "<group>"; };
+		D85970521FBC85E000751A17 /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
+		D85970541FBC867F00751A17 /* Skill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Skill.swift; sourceTree = "<group>"; };
 		D88AE6E31FB0114100FF0A22 /* Pagorn-Resume-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pagorn-Resume-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D88AE6E61FB0114100FF0A22 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D88AE6E81FB0114100FF0A22 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +34,10 @@
 		D88AE6F01FB0114100FF0A22 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D88AE6F31FB0114100FF0A22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D88AE6F51FB0114100FF0A22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D8B4A3E41FBC4F5500017C62 /* skill.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = skill.json; sourceTree = "<group>"; };
+		D8B4A3E51FBC4F5500017C62 /* work_experience.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = work_experience.json; sourceTree = "<group>"; };
+		D8B4A3E61FBC4F5500017C62 /* activity.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = activity.json; sourceTree = "<group>"; };
+		D8B4A3EA1FBC4F6100017C62 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +70,9 @@
 		D88AE6E51FB0114100FF0A22 /* Pagorn-Resume-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				D8B4A3E31FBC4DE400017C62 /* Model */,
+				D8B4A3E21FBC4DCE00017C62 /* Module */,
+				D8B4A3E11FBC3D8900017C62 /* Service */,
 				D88AE6E61FB0114100FF0A22 /* AppDelegate.swift */,
 				D88AE6E81FB0114100FF0A22 /* ViewController.swift */,
 				D88AE6EA1FB0114100FF0A22 /* Main.storyboard */,
@@ -65,6 +82,34 @@
 				D88AE6ED1FB0114100FF0A22 /* Pagorn_Resume_iOS.xcdatamodeld */,
 			);
 			path = "Pagorn-Resume-iOS";
+			sourceTree = "<group>";
+		};
+		D8B4A3E11FBC3D8900017C62 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				D8B4A3EA1FBC4F6100017C62 /* APIService.swift */,
+				D8B4A3E61FBC4F5500017C62 /* activity.json */,
+				D8B4A3E41FBC4F5500017C62 /* skill.json */,
+				D8B4A3E51FBC4F5500017C62 /* work_experience.json */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		D8B4A3E21FBC4DCE00017C62 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		D8B4A3E31FBC4DE400017C62 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D85970501FBC792400751A17 /* WorkExperience.swift */,
+				D85970521FBC85E000751A17 /* Activity.swift */,
+				D85970541FBC867F00751A17 /* Skill.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +172,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8B4A3E91FBC4F5500017C62 /* activity.json in Resources */,
 				D88AE6F41FB0114100FF0A22 /* LaunchScreen.storyboard in Resources */,
+				D8B4A3E71FBC4F5500017C62 /* skill.json in Resources */,
+				D8B4A3E81FBC4F5500017C62 /* work_experience.json in Resources */,
 				D88AE6F11FB0114100FF0A22 /* Assets.xcassets in Resources */,
 				D88AE6EC1FB0114100FF0A22 /* Main.storyboard in Resources */,
 			);
@@ -140,8 +188,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D85970531FBC85E000751A17 /* Activity.swift in Sources */,
 				D88AE6EF1FB0114100FF0A22 /* Pagorn_Resume_iOS.xcdatamodeld in Sources */,
+				D85970511FBC792400751A17 /* WorkExperience.swift in Sources */,
 				D88AE6E91FB0114100FF0A22 /* ViewController.swift in Sources */,
+				D8B4A3EB1FBC4F6100017C62 /* APIService.swift in Sources */,
+				D85970551FBC867F00751A17 /* Skill.swift in Sources */,
 				D88AE6E71FB0114100FF0A22 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -308,6 +360,7 @@
 				D88AE6FA1FB0114100FF0A22 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

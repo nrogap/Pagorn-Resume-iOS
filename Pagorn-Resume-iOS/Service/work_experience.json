@@ -1,0 +1,44 @@
+{
+    "results": [
+        {
+            "id": 1,
+            "company": "Miracle Inspire Co., Ltd.",
+            "position": "Android Developer",
+            "event": "Internship",
+            "start_date": "2015-06-02",
+            "end_date": "2015-07-29"
+        },
+        {
+            "id": 2,
+            "company": "Digix Technology Co., Ltd.",
+            "position": "Android & iOS Developer",
+            "event": "Cooperative Education",
+            "start_date": "2016-01-18",
+            "end_date": "2016-05-13"
+        },
+        {
+            "id": 3,
+            "company": "Digix Technology Co., Ltd.",
+            "position": "iOS Developer",
+            "event": "Probation and actual work",
+            "start_date": "2016-06-03",
+            "end_date": "2017-03-29"
+        },
+        {
+            "id": 4,
+            "company": "Freelance",
+            "position": "Android Developer",
+            "event": "",
+            "start_date": "2016-07-12",
+            "end_date": "2017-03-22"
+        },
+        {
+            "id": 5,
+            "company": "Personnel Division of Recruit Training Center",
+            "position": "Web Developer",
+            "event": "Conscription",
+            "start_date": "2017-05-12",
+            "end_date": "2017-10-31"
+        }
+    ]
+}
