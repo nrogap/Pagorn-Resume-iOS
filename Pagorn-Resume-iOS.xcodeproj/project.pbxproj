@@ -16,13 +16,17 @@
 		D88AE6EF1FB0114100FF0A22 /* Pagorn_Resume_iOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D88AE6ED1FB0114100FF0A22 /* Pagorn_Resume_iOS.xcdatamodeld */; };
 		D88AE6F11FB0114100FF0A22 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D88AE6F01FB0114100FF0A22 /* Assets.xcassets */; };
 		D88AE6F41FB0114100FF0A22 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D88AE6F21FB0114100FF0A22 /* LaunchScreen.storyboard */; };
+		D8981D6B1FBEBCD80045D572 /* ActivityTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8981D6A1FBEBCD80045D572 /* ActivityTableViewController.swift */; };
 		D8B4A3E71FBC4F5500017C62 /* skill.json in Resources */ = {isa = PBXBuildFile; fileRef = D8B4A3E41FBC4F5500017C62 /* skill.json */; };
 		D8B4A3E81FBC4F5500017C62 /* work_experience.json in Resources */ = {isa = PBXBuildFile; fileRef = D8B4A3E51FBC4F5500017C62 /* work_experience.json */; };
 		D8B4A3E91FBC4F5500017C62 /* activity.json in Resources */ = {isa = PBXBuildFile; fileRef = D8B4A3E61FBC4F5500017C62 /* activity.json */; };
 		D8B4A3EB1FBC4F6100017C62 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B4A3EA1FBC4F6100017C62 /* APIService.swift */; };
+		DB1DA99324E792C0470D95E9 /* Pods_Pagorn_Resume_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F71B8BBF8D79E17617B2DDDE /* Pods_Pagorn_Resume_iOS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7143CFC124C7F8B91408A7CF /* Pods-Pagorn-Resume-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pagorn-Resume-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pagorn-Resume-iOS/Pods-Pagorn-Resume-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		778CFE7E977A19F693E70196 /* Pods-Pagorn-Resume-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pagorn-Resume-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pagorn-Resume-iOS/Pods-Pagorn-Resume-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		D85970501FBC792400751A17 /* WorkExperience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkExperience.swift; sourceTree = "<group>"; };
 		D85970521FBC85E000751A17 /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
 		D85970541FBC867F00751A17 /* Skill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Skill.swift; sourceTree = "<group>"; };
@@ -34,10 +38,12 @@
 		D88AE6F01FB0114100FF0A22 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D88AE6F31FB0114100FF0A22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D88AE6F51FB0114100FF0A22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D8981D6A1FBEBCD80045D572 /* ActivityTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityTableViewController.swift; sourceTree = "<group>"; };
 		D8B4A3E41FBC4F5500017C62 /* skill.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = skill.json; sourceTree = "<group>"; };
 		D8B4A3E51FBC4F5500017C62 /* work_experience.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = work_experience.json; sourceTree = "<group>"; };
 		D8B4A3E61FBC4F5500017C62 /* activity.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = activity.json; sourceTree = "<group>"; };
 		D8B4A3EA1FBC4F6100017C62 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		F71B8BBF8D79E17617B2DDDE /* Pods_Pagorn_Resume_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pagorn_Resume_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,17 +51,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB1DA99324E792C0470D95E9 /* Pods_Pagorn_Resume_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		70B74929979493E08F5E4FFD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				778CFE7E977A19F693E70196 /* Pods-Pagorn-Resume-iOS.debug.xcconfig */,
+				7143CFC124C7F8B91408A7CF /* Pods-Pagorn-Resume-iOS.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		D88AE6DA1FB0114100FF0A22 = {
 			isa = PBXGroup;
 			children = (
 				D88AE6E51FB0114100FF0A22 /* Pagorn-Resume-iOS */,
 				D88AE6E41FB0114100FF0A22 /* Products */,
+				70B74929979493E08F5E4FFD /* Pods */,
+				E9D22DF20C828708992F3C5F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,6 +116,7 @@
 		D8B4A3E21FBC4DCE00017C62 /* Module */ = {
 			isa = PBXGroup;
 			children = (
+				D8981D6A1FBEBCD80045D572 /* ActivityTableViewController.swift */,
 			);
 			path = Module;
 			sourceTree = "<group>";
@@ -112,6 +131,14 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		E9D22DF20C828708992F3C5F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F71B8BBF8D79E17617B2DDDE /* Pods_Pagorn_Resume_iOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -119,9 +146,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D88AE6F81FB0114100FF0A22 /* Build configuration list for PBXNativeTarget "Pagorn-Resume-iOS" */;
 			buildPhases = (
+				DECFBA552FD5B45ECC65FFBB /* [CP] Check Pods Manifest.lock */,
 				D88AE6DF1FB0114100FF0A22 /* Sources */,
 				D88AE6E01FB0114100FF0A22 /* Frameworks */,
 				D88AE6E11FB0114100FF0A22 /* Resources */,
+				2EE7AFDDF367E8F3713E466F /* [CP] Embed Pods Frameworks */,
+				C3C61DAC5858810539AB8181 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -183,11 +213,68 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2EE7AFDDF367E8F3713E466F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Pagorn-Resume-iOS/Pods-Pagorn-Resume-iOS-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/PKHUD/PKHUD.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PKHUD.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Pagorn-Resume-iOS/Pods-Pagorn-Resume-iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C3C61DAC5858810539AB8181 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Pagorn-Resume-iOS/Pods-Pagorn-Resume-iOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DECFBA552FD5B45ECC65FFBB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Pagorn-Resume-iOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D88AE6DF1FB0114100FF0A22 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8981D6B1FBEBCD80045D572 /* ActivityTableViewController.swift in Sources */,
 				D85970531FBC85E000751A17 /* Activity.swift in Sources */,
 				D88AE6EF1FB0114100FF0A22 /* Pagorn_Resume_iOS.xcdatamodeld in Sources */,
 				D85970511FBC792400751A17 /* WorkExperience.swift in Sources */,
@@ -317,6 +404,7 @@
 		};
 		D88AE6F91FB0114100FF0A22 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 778CFE7E977A19F693E70196 /* Pods-Pagorn-Resume-iOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = UC97B67PD8;
@@ -330,6 +418,7 @@
 		};
 		D88AE6FA1FB0114100FF0A22 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7143CFC124C7F8B91408A7CF /* Pods-Pagorn-Resume-iOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = UC97B67PD8;
