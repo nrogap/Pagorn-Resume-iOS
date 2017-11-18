@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item 2-->
+        <!--Work Exp-->
         <scene sceneID="aXM-WH-VQ4">
             <objects>
                 <viewController id="VH1-n5-lYF" sceneMemberID="viewController">
@@ -20,13 +20,13 @@
                         <color key="backgroundColor" red="1" green="0.50965378120000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="VRx-kC-NP3"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="pv2-TW-b9d"/>
+                    <tabBarItem key="tabBarItem" title="Work Exp" image="ic_work_36pt" id="pv2-TW-b9d"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E6S-nB-QzI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="449" y="205"/>
         </scene>
-        <!--Item-->
+        <!--Skill-->
         <scene sceneID="bgk-73-4Qt">
             <objects>
                 <viewController id="pIc-Jr-Eab" sceneMemberID="viewController">
@@ -36,13 +36,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="hMX-Kr-V1V"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="1dR-Eh-fXw"/>
+                    <tabBarItem key="tabBarItem" title="Skill" image="ic_code_36pt" id="1dR-Eh-fXw"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gDa-Bf-cw1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-274" y="888"/>
         </scene>
-        <!--Item 1-->
+        <!--Home-->
         <scene sceneID="3qQ-Ke-T6d">
             <objects>
                 <viewController id="pM3-fd-nuh" sceneMemberID="viewController">
@@ -52,7 +52,7 @@
                         <color key="backgroundColor" red="0.56543179509999997" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="8oC-Rb-1zn"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="1Am-NE-cW7"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="ic_home_36pt" id="1Am-NE-cW7"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0fz-BG-Dss" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -61,7 +61,7 @@
         <!--Activity-->
         <scene sceneID="V4p-d9-fzT">
             <objects>
-                <tableViewController title="Activity" id="SZz-RJ-J3s" customClass="ActivityTableViewController" customModule="Pagorn_Resume_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="SZz-RJ-J3s" customClass="ActivityListTableViewController" customModule="Pagorn_Resume_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="2oo-Rt-c8R">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -134,7 +134,7 @@
                             <outlet property="delegate" destination="SZz-RJ-J3s" id="r8G-if-eCm"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Item" id="oiX-p1-VoU"/>
+                    <tabBarItem key="tabBarItem" title="Activity" image="ic_flag_36pt" id="oiX-p1-VoU"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4LL-g6-Wtv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -143,18 +143,18 @@
         <!--Tab Bar Controller-->
         <scene sceneID="sHm-la-h9Z">
             <objects>
-                <tabBarController id="gAa-MG-ZAv" sceneMemberID="viewController">
+                <tabBarController id="gAa-MG-ZAv" customClass="TabBarController" customModule="Pagorn_Resume_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="jzS-YL-xUg"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="a00-6b-vsM">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="selectedImageTintColor" red="1" green="0.35757412529999999" blue="0.78291471489999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="pM3-fd-nuh" kind="relationship" relationship="viewControllers" id="a7S-r2-3mI"/>
                         <segue destination="VH1-n5-lYF" kind="relationship" relationship="viewControllers" id="qzY-5n-Tey"/>
                         <segue destination="pIc-Jr-Eab" kind="relationship" relationship="viewControllers" id="By8-14-4M2"/>
-                        <segue destination="SZz-RJ-J3s" kind="relationship" relationship="viewControllers" id="YRb-mG-Xbj"/>
+                        <segue destination="SZz-RJ-J3s" kind="relationship" relationship="viewControllers" id="9IQ-yd-iKv"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wxy-Cj-qOE" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -164,6 +164,7 @@
         <!--Navigation Controller-->
         <scene sceneID="dg3-do-Sq4">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SYJ-cR-81b" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Ksw-X0-Xm3" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="4G4-fI-2Xp">
@@ -175,9 +176,14 @@
                         <segue destination="gAa-MG-ZAv" kind="relationship" relationship="rootViewController" id="8kR-iE-Y7P"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="SYJ-cR-81b" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1286" y="-237"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="ic_code_36pt" width="36" height="36"/>
+        <image name="ic_flag_36pt" width="36" height="36"/>
+        <image name="ic_home_36pt" width="36" height="36"/>
+        <image name="ic_work_36pt" width="36" height="36"/>
+    </resources>
 </document>

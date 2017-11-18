@@ -88,7 +88,7 @@ extension ActivityListViewModel {
         let activity = self.activities[indexPath.row]
         self.selectedActivity = activity
         
-        self.alertMessage = "Comming Soon"
+        self.alertMessage = "Coming Soon"
     }
 }
 

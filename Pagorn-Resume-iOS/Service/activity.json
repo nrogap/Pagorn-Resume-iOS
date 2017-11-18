@@ -13,14 +13,14 @@
                 "name": "National Software Contest 2015",
                 "round": "Final Round",
                 "description": "MissionZ a location-base game in Android that inspire people to exercise with play game. (Android Native)",
-                "cover_url": "https://pixabay.com/en/computer-computer-code-programming-1836330/"
+                "cover_url": "https://cdn.pixabay.com/photo/2016/11/19/14/00/code-1839406__340.jpg"
                 },
                 {
                 "id": 3,
                 "name": "National Software Contest 2016",
                 "round": "Proposal Round",
                 "description": "MissionZ a location-base game in Android that inspire people to exercise with play game. (Unity3D with C# script)",
-                "cover_url": "https://pixabay.com/en/code-coding-computer-data-desktop-1839877/"
+                "cover_url": "https://cdn.pixabay.com/photo/2016/11/19/15/32/code-1839877__340.jpg"
                 }
                 ]
 }
