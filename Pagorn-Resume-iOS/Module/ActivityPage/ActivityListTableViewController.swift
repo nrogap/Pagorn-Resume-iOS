@@ -32,8 +32,6 @@ class ActivityListTableViewController: UITableViewController {
     
     func initView() {
         
-        self.navigationController?.title = "Activity"
-        
         tableView.estimatedRowHeight = 200
         tableView.rowHeight = UITableViewAutomaticDimension
     }

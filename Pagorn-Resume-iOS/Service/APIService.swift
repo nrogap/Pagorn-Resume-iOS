@@ -22,7 +22,7 @@ class APIService: APIServiceProtocal {
     
     func fetchSkill(complete: @escaping (Bool, [Skill], Error?) -> ()) {
         DispatchQueue.global().async {
-            sleep(3)
+//            sleep(3)
             let path = Bundle.main.path(forResource: "skill", ofType: "json")!
             let data = try! Data(contentsOf: URL(fileURLWithPath: path))
             let decoder = JSONDecoder()
@@ -36,7 +36,7 @@ class APIService: APIServiceProtocal {
     func fetchActivity(complete: @escaping (Bool, [Activity], _ error: Error?) -> ()) {
         
         DispatchQueue.global().async {
-            sleep(3)
+//            sleep(3)
             let path = Bundle.main.path(forResource: "activity", ofType: "json")!
             let data = try! Data(contentsOf: URL(fileURLWithPath: path))
             let decoder = JSONDecoder()
@@ -49,7 +49,7 @@ class APIService: APIServiceProtocal {
     func fetchWorkExperience(complete: @escaping (Bool, [WorkExperience], Error?) -> ()) {
         
         DispatchQueue.global().async {
-            sleep(3)
+//            sleep(3)
             let path = Bundle.main.path(forResource: "work_experience", ofType: "json")!
             let data = try! Data(contentsOf:URL(fileURLWithPath: path))
             let decoder = JSONDecoder()
