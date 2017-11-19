@@ -112,6 +112,8 @@ extension UIColor {
     }
 }
 
+
+
 struct WorkExpListCellViewModel {
     let textDate: String
     let textCompany: String

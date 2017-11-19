@@ -16,5 +16,5 @@ struct Skill: Codable {
     let id: Int
     let name: String
     let detail: String?
-    let start: Int
+    let star: Int
 }

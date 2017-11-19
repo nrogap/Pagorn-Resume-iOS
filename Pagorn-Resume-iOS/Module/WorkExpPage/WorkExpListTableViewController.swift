@@ -27,6 +27,8 @@ class WorkExpListTableViewController: UITableViewController {
     func initView() {
         self.tableView.estimatedRowHeight = 230
         self.tableView.rowHeight = UITableViewAutomaticDimension
+        
+        self.tableView.allowsSelection = false;
     }
     
     func initVM() {
