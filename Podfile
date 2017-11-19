@@ -9,5 +9,6 @@ target 'Pagorn-Resume-iOS' do
   pod 'PKHUD'
 #  pod 'Alamofire'
   pod 'SDWebImage'
+  pod 'UICircularProgressRing'
 
 end
