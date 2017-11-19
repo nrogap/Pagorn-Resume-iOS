@@ -10,6 +10,7 @@
 		D83FB9D31FC12FCA00853AC5 /* WorkExpListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83FB9D21FC12FCA00853AC5 /* WorkExpListTableViewController.swift */; };
 		D83FB9D51FC1305400853AC5 /* WorkExpListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83FB9D41FC1305400853AC5 /* WorkExpListTableViewCell.swift */; };
 		D83FB9D71FC132BC00853AC5 /* WorkExpListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83FB9D61FC132BC00853AC5 /* WorkExpListViewModel.swift */; };
+		D83FB9DA1FC1809800853AC5 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83FB9D91FC1809800853AC5 /* HomeViewController.swift */; };
 		D85970511FBC792400751A17 /* WorkExperience.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85970501FBC792400751A17 /* WorkExperience.swift */; };
 		D85970531FBC85E000751A17 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85970521FBC85E000751A17 /* Activity.swift */; };
 		D85970551FBC867F00751A17 /* Skill.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85970541FBC867F00751A17 /* Skill.swift */; };
@@ -36,6 +37,7 @@
 		D83FB9D21FC12FCA00853AC5 /* WorkExpListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkExpListTableViewController.swift; sourceTree = "<group>"; };
 		D83FB9D41FC1305400853AC5 /* WorkExpListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkExpListTableViewCell.swift; sourceTree = "<group>"; };
 		D83FB9D61FC132BC00853AC5 /* WorkExpListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkExpListViewModel.swift; sourceTree = "<group>"; };
+		D83FB9D91FC1809800853AC5 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		D85970501FBC792400751A17 /* WorkExperience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkExperience.swift; sourceTree = "<group>"; };
 		D85970521FBC85E000751A17 /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
 		D85970541FBC867F00751A17 /* Skill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Skill.swift; sourceTree = "<group>"; };
@@ -87,6 +89,14 @@
 				D83FB9D61FC132BC00853AC5 /* WorkExpListViewModel.swift */,
 			);
 			path = WorkExpPage;
+			sourceTree = "<group>";
+		};
+		D83FB9D81FC17FC700853AC5 /* HomePage */ = {
+			isa = PBXGroup;
+			children = (
+				D83FB9D91FC1809800853AC5 /* HomeViewController.swift */,
+			);
+			path = HomePage;
 			sourceTree = "<group>";
 		};
 		D8634DE61FC0286300356479 /* TabBarPage */ = {
@@ -156,6 +166,7 @@
 		D8B4A3E21FBC4DCE00017C62 /* Module */ = {
 			isa = PBXGroup;
 			children = (
+				D83FB9D81FC17FC700853AC5 /* HomePage */,
 				D83FB9D11FC12FA000853AC5 /* WorkExpPage */,
 				D8634DE61FC0286300356479 /* TabBarPage */,
 				D8981D6E1FBEEAE70045D572 /* ActivityPage */,
@@ -322,6 +333,7 @@
 				D8634DE51FC0283C00356479 /* TabBarController.swift in Sources */,
 				D88AE6EF1FB0114100FF0A22 /* Pagorn_Resume_iOS.xcdatamodeld in Sources */,
 				D85970511FBC792400751A17 /* WorkExperience.swift in Sources */,
+				D83FB9DA1FC1809800853AC5 /* HomeViewController.swift in Sources */,
 				D88AE6E91FB0114100FF0A22 /* ViewController.swift in Sources */,
 				D8981D701FBEF22E0045D572 /* ActivityListViewModel.swift in Sources */,
 				D8B4A3EB1FBC4F6100017C62 /* APIService.swift in Sources */,

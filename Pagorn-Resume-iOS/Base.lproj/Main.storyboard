@@ -30,13 +30,13 @@
         <!--Home-->
         <scene sceneID="3qQ-Ke-T6d">
             <objects>
-                <viewController id="pM3-fd-nuh" sceneMemberID="viewController">
+                <viewController id="pM3-fd-nuh" customClass="HomeViewController" customModule="Pagorn_Resume_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zIe-xk-4II">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pagorn Petchnukulkait" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kzf-Ii-Imw">
-                                <rect key="frame" x="72" y="231" width="231" height="29"/>
+                                <rect key="frame" x="72" y="243" width="231" height="29"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="29" id="NZk-So-r6s"/>
                                 </constraints>
@@ -52,7 +52,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iOS Developer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gac-Lm-UuS">
-                                <rect key="frame" x="132.5" y="268" width="109.5" height="21"/>
+                                <rect key="frame" x="132.5" y="280" width="109.5" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="c74-80-ZF0"/>
                                 </constraints>
@@ -61,7 +61,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ycF-2X-7LG">
-                                <rect key="frame" x="97" y="309" width="181" height="24"/>
+                                <rect key="frame" x="97" y="325" width="181" height="24"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_location_on" translatesAutoresizingMaskIntoConstraints="NO" id="2SD-u3-3Pg">
                                         <rect key="frame" x="0.0" y="0.0" width="24" height="24"/>
@@ -81,10 +81,10 @@
                         </subviews>
                         <color key="backgroundColor" red="0.95686274509803915" green="0.95294117647058818" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="kzf-Ii-Imw" firstAttribute="top" secondItem="vBQ-Fm-Ofc" secondAttribute="bottom" constant="8" id="0v8-2r-tr0"/>
+                            <constraint firstItem="kzf-Ii-Imw" firstAttribute="top" secondItem="vBQ-Fm-Ofc" secondAttribute="bottom" constant="20" id="0v8-2r-tr0"/>
                             <constraint firstItem="vBQ-Fm-Ofc" firstAttribute="centerX" secondItem="zIe-xk-4II" secondAttribute="centerX" id="6EQ-jv-Qxo"/>
                             <constraint firstItem="ycF-2X-7LG" firstAttribute="centerX" secondItem="zIe-xk-4II" secondAttribute="centerX" id="Dru-XX-2gZ"/>
-                            <constraint firstItem="ycF-2X-7LG" firstAttribute="top" secondItem="gac-Lm-UuS" secondAttribute="bottom" constant="20" id="Jeo-ir-4GJ"/>
+                            <constraint firstItem="ycF-2X-7LG" firstAttribute="top" secondItem="gac-Lm-UuS" secondAttribute="bottom" constant="24" id="Jeo-ir-4GJ"/>
                             <constraint firstItem="vBQ-Fm-Ofc" firstAttribute="top" secondItem="8oC-Rb-1zn" secondAttribute="top" constant="24" id="M2G-kd-nIA"/>
                             <constraint firstItem="gac-Lm-UuS" firstAttribute="centerX" secondItem="zIe-xk-4II" secondAttribute="centerX" id="tYH-pc-0nU"/>
                             <constraint firstItem="gac-Lm-UuS" firstAttribute="top" secondItem="kzf-Ii-Imw" secondAttribute="bottom" constant="8" id="xFu-Fg-4J7"/>
@@ -93,6 +93,13 @@
                         <viewLayoutGuide key="safeArea" id="8oC-Rb-1zn"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="ic_home_36pt" id="1Am-NE-cW7"/>
+                    <connections>
+                        <outlet property="imageViewProfile" destination="vBQ-Fm-Ofc" id="rKb-m0-Cjx"/>
+                        <outlet property="labelFullName" destination="kzf-Ii-Imw" id="700-8x-IHY"/>
+                        <outlet property="labelLocation" destination="14H-8K-kbA" id="MZ3-Gb-R7e"/>
+                        <outlet property="labelPosition" destination="gac-Lm-UuS" id="DTP-SX-Muu"/>
+                        <outlet property="stackViewLocation" destination="ycF-2X-7LG" id="GYy-cL-ajH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0fz-BG-Dss" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -219,7 +226,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vj9-aw-CY5">
-                                            <rect key="frame" x="16" y="16" width="343" height="197.5"/>
+                                            <rect key="frame" x="16" y="16" width="343" height="213.5"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="11/09/2010 - 22/11/2015" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N9E-rf-Yif">
                                                     <rect key="frame" x="26" y="16" width="301" height="21"/>
@@ -249,7 +256,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uxa-GD-rCo">
-                                                    <rect key="frame" x="0.0" y="0.0" width="10" height="197.5"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="10" height="213.5"/>
                                                     <color key="backgroundColor" red="1" green="0.35757412529999999" blue="0.78291471489999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="10" id="Ecb-N0-apU"/>
@@ -290,7 +297,7 @@
                                         <constraint firstAttribute="trailing" secondItem="vj9-aw-CY5" secondAttribute="trailing" constant="16" id="8lQ-fd-mCU"/>
                                         <constraint firstItem="vj9-aw-CY5" firstAttribute="top" secondItem="Xu4-Kd-Bvp" secondAttribute="top" constant="16" id="YzY-wg-ZaU"/>
                                         <constraint firstItem="vj9-aw-CY5" firstAttribute="leading" secondItem="Xu4-Kd-Bvp" secondAttribute="leading" constant="16" id="bby-wx-VQx"/>
-                                        <constraint firstAttribute="bottom" secondItem="vj9-aw-CY5" secondAttribute="bottom" constant="16" id="zth-wl-PDa"/>
+                                        <constraint firstAttribute="bottom" secondItem="vj9-aw-CY5" secondAttribute="bottom" id="zth-wl-PDa"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
