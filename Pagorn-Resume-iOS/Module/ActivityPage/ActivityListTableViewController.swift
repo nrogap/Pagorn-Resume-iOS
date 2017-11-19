@@ -51,14 +51,14 @@ class ActivityListTableViewController: UITableViewController {
                 if isLoading {
                     HUD.show(.progress)
                     
-                    UIView.animate(withDuration: 0.2, animations: {
+                    UITableView.animate(withDuration: 0.2, animations: {
                         self?.tableView.alpha = 0.0
                     })
                     
                 }else{
                     HUD.hide()
                     
-                    UIView.animate(withDuration: 0.2, animations: {
+                    UITableView.animate(withDuration: 0.2, animations: {
                         self?.tableView.alpha = 1.0
                     })
                 }

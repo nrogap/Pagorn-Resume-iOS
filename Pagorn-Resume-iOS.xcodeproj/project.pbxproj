@@ -11,6 +11,9 @@
 		D83FB9D51FC1305400853AC5 /* WorkExpListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83FB9D41FC1305400853AC5 /* WorkExpListTableViewCell.swift */; };
 		D83FB9D71FC132BC00853AC5 /* WorkExpListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83FB9D61FC132BC00853AC5 /* WorkExpListViewModel.swift */; };
 		D83FB9DA1FC1809800853AC5 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83FB9D91FC1809800853AC5 /* HomeViewController.swift */; };
+		D83FB9DD1FC19FD100853AC5 /* SkillCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83FB9DC1FC19FD100853AC5 /* SkillCollectionViewController.swift */; };
+		D83FB9DF1FC19FE600853AC5 /* SkillCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83FB9DE1FC19FE600853AC5 /* SkillCollectionViewCell.swift */; };
+		D83FB9E11FC1A00500853AC5 /* SkillViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83FB9E01FC1A00500853AC5 /* SkillViewModel.swift */; };
 		D85970511FBC792400751A17 /* WorkExperience.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85970501FBC792400751A17 /* WorkExperience.swift */; };
 		D85970531FBC85E000751A17 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85970521FBC85E000751A17 /* Activity.swift */; };
 		D85970551FBC867F00751A17 /* Skill.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85970541FBC867F00751A17 /* Skill.swift */; };
@@ -38,6 +41,9 @@
 		D83FB9D41FC1305400853AC5 /* WorkExpListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkExpListTableViewCell.swift; sourceTree = "<group>"; };
 		D83FB9D61FC132BC00853AC5 /* WorkExpListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkExpListViewModel.swift; sourceTree = "<group>"; };
 		D83FB9D91FC1809800853AC5 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		D83FB9DC1FC19FD100853AC5 /* SkillCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillCollectionViewController.swift; sourceTree = "<group>"; };
+		D83FB9DE1FC19FE600853AC5 /* SkillCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillCollectionViewCell.swift; sourceTree = "<group>"; };
+		D83FB9E01FC1A00500853AC5 /* SkillViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillViewModel.swift; sourceTree = "<group>"; };
 		D85970501FBC792400751A17 /* WorkExperience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkExperience.swift; sourceTree = "<group>"; };
 		D85970521FBC85E000751A17 /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
 		D85970541FBC867F00751A17 /* Skill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Skill.swift; sourceTree = "<group>"; };
@@ -102,6 +108,9 @@
 		D83FB9DB1FC18C3000853AC5 /* SkillPage */ = {
 			isa = PBXGroup;
 			children = (
+				D83FB9DC1FC19FD100853AC5 /* SkillCollectionViewController.swift */,
+				D83FB9DE1FC19FE600853AC5 /* SkillCollectionViewCell.swift */,
+				D83FB9E01FC1A00500853AC5 /* SkillViewModel.swift */,
 			);
 			path = SkillPage;
 			sourceTree = "<group>";
@@ -346,8 +355,11 @@
 				D83FB9DA1FC1809800853AC5 /* HomeViewController.swift in Sources */,
 				D88AE6E91FB0114100FF0A22 /* ViewController.swift in Sources */,
 				D8981D701FBEF22E0045D572 /* ActivityListViewModel.swift in Sources */,
+				D83FB9DD1FC19FD100853AC5 /* SkillCollectionViewController.swift in Sources */,
 				D8B4A3EB1FBC4F6100017C62 /* APIService.swift in Sources */,
+				D83FB9E11FC1A00500853AC5 /* SkillViewModel.swift in Sources */,
 				D83FB9D51FC1305400853AC5 /* WorkExpListTableViewCell.swift in Sources */,
+				D83FB9DF1FC19FE600853AC5 /* SkillCollectionViewCell.swift in Sources */,
 				D83FB9D31FC12FCA00853AC5 /* WorkExpListTableViewController.swift in Sources */,
 				D85970551FBC867F00751A17 /* Skill.swift in Sources */,
 				D83FB9D71FC132BC00853AC5 /* WorkExpListViewModel.swift in Sources */,

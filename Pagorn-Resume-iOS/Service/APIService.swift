@@ -10,7 +10,7 @@ import Foundation
 
 protocol APIServiceProtocal {
 
-    func fetchWorkExperience(complete: @escaping (_ success: Bool, _ workExperience:[WorkExperience], _ error:Error?)->() )
+    func fetchWorkExperience(complete: @escaping (_ success: Bool, _ workExperience:[WorkExperience], _ error:Error?)->())
     
     func fetchActivity(complete: @escaping (_ success: Bool, _ activity:[Activity], _ error:Error?) -> ())
     
@@ -20,7 +20,7 @@ protocol APIServiceProtocal {
 
 class APIService: APIServiceProtocal {
     
-    func fetchSkill(complete: @escaping (Bool, [Skill], Error?) -> ()) {
+    func fetchSkill(complete: @escaping (Bool, [Skill], _ error: Error?) -> ()) {
         DispatchQueue.global().async {
 //            sleep(3)
             let path = Bundle.main.path(forResource: "skill", ofType: "json")!
@@ -46,7 +46,7 @@ class APIService: APIServiceProtocal {
         }
     }
     
-    func fetchWorkExperience(complete: @escaping (Bool, [WorkExperience], Error?) -> ()) {
+    func fetchWorkExperience(complete: @escaping (Bool, [WorkExperience], _ error: Error?) -> ()) {
         
         DispatchQueue.global().async {
 //            sleep(3)
