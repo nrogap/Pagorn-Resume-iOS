@@ -99,6 +99,13 @@
 			path = HomePage;
 			sourceTree = "<group>";
 		};
+		D83FB9DB1FC18C3000853AC5 /* SkillPage */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SkillPage;
+			sourceTree = "<group>";
+		};
 		D8634DE61FC0286300356479 /* TabBarPage */ = {
 			isa = PBXGroup;
 			children = (
@@ -166,6 +173,7 @@
 		D8B4A3E21FBC4DCE00017C62 /* Module */ = {
 			isa = PBXGroup;
 			children = (
+				D83FB9DB1FC18C3000853AC5 /* SkillPage */,
 				D83FB9D81FC17FC700853AC5 /* HomePage */,
 				D83FB9D11FC12FA000853AC5 /* WorkExpPage */,
 				D8634DE61FC0286300356479 /* TabBarPage */,
@@ -277,11 +285,13 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-Pagorn-Resume-iOS/Pods-Pagorn-Resume-iOS-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/PKHUD/PKHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/UICircularProgressRing/UICircularProgressRing.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PKHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UICircularProgressRing.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
