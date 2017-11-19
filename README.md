@@ -1,7 +1,7 @@
 # Pagorn-Resume-iOS
 
 ### Preview
-![](https://imgur.com/tz4e63p)
+[Imgur](https://i.imgur.com/tz4e63p.gifv)
 
 ### Library
 * [UICircularProgressRing](https://github.com/luispadron/UICircularProgressRing)
