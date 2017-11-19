@@ -99,7 +99,7 @@ class ActivityListTableViewController: UITableViewController {
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "ActivityCellIdentifier", for: indexPath) as? ActivityListTableViewCell else {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "activityCellIdentifier", for: indexPath) as? ActivityListTableViewCell else {
             fatalError("Cell doesn't exists in storyboard")
         }
         

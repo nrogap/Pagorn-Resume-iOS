@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D83FB9D31FC12FCA00853AC5 /* WorkExpListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83FB9D21FC12FCA00853AC5 /* WorkExpListTableViewController.swift */; };
+		D83FB9D51FC1305400853AC5 /* WorkExpListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83FB9D41FC1305400853AC5 /* WorkExpListTableViewCell.swift */; };
+		D83FB9D71FC132BC00853AC5 /* WorkExpListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83FB9D61FC132BC00853AC5 /* WorkExpListViewModel.swift */; };
 		D85970511FBC792400751A17 /* WorkExperience.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85970501FBC792400751A17 /* WorkExperience.swift */; };
 		D85970531FBC85E000751A17 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85970521FBC85E000751A17 /* Activity.swift */; };
 		D85970551FBC867F00751A17 /* Skill.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85970541FBC867F00751A17 /* Skill.swift */; };
@@ -30,6 +33,9 @@
 /* Begin PBXFileReference section */
 		7143CFC124C7F8B91408A7CF /* Pods-Pagorn-Resume-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pagorn-Resume-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pagorn-Resume-iOS/Pods-Pagorn-Resume-iOS.release.xcconfig"; sourceTree = "<group>"; };
 		778CFE7E977A19F693E70196 /* Pods-Pagorn-Resume-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pagorn-Resume-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pagorn-Resume-iOS/Pods-Pagorn-Resume-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		D83FB9D21FC12FCA00853AC5 /* WorkExpListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkExpListTableViewController.swift; sourceTree = "<group>"; };
+		D83FB9D41FC1305400853AC5 /* WorkExpListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkExpListTableViewCell.swift; sourceTree = "<group>"; };
+		D83FB9D61FC132BC00853AC5 /* WorkExpListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkExpListViewModel.swift; sourceTree = "<group>"; };
 		D85970501FBC792400751A17 /* WorkExperience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkExperience.swift; sourceTree = "<group>"; };
 		D85970521FBC85E000751A17 /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
 		D85970541FBC867F00751A17 /* Skill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Skill.swift; sourceTree = "<group>"; };
@@ -71,6 +77,16 @@
 				7143CFC124C7F8B91408A7CF /* Pods-Pagorn-Resume-iOS.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		D83FB9D11FC12FA000853AC5 /* WorkExpPage */ = {
+			isa = PBXGroup;
+			children = (
+				D83FB9D21FC12FCA00853AC5 /* WorkExpListTableViewController.swift */,
+				D83FB9D41FC1305400853AC5 /* WorkExpListTableViewCell.swift */,
+				D83FB9D61FC132BC00853AC5 /* WorkExpListViewModel.swift */,
+			);
+			path = WorkExpPage;
 			sourceTree = "<group>";
 		};
 		D8634DE61FC0286300356479 /* TabBarPage */ = {
@@ -140,6 +156,7 @@
 		D8B4A3E21FBC4DCE00017C62 /* Module */ = {
 			isa = PBXGroup;
 			children = (
+				D83FB9D11FC12FA000853AC5 /* WorkExpPage */,
 				D8634DE61FC0286300356479 /* TabBarPage */,
 				D8981D6E1FBEEAE70045D572 /* ActivityPage */,
 			);
@@ -308,7 +325,10 @@
 				D88AE6E91FB0114100FF0A22 /* ViewController.swift in Sources */,
 				D8981D701FBEF22E0045D572 /* ActivityListViewModel.swift in Sources */,
 				D8B4A3EB1FBC4F6100017C62 /* APIService.swift in Sources */,
+				D83FB9D51FC1305400853AC5 /* WorkExpListTableViewCell.swift in Sources */,
+				D83FB9D31FC12FCA00853AC5 /* WorkExpListTableViewController.swift in Sources */,
 				D85970551FBC867F00751A17 /* Skill.swift in Sources */,
+				D83FB9D71FC132BC00853AC5 /* WorkExpListViewModel.swift in Sources */,
 				D8981D6D1FBEEA0B0045D572 /* ActivityListTableViewCell.swift in Sources */,
 				D88AE6E71FB0114100FF0A22 /* AppDelegate.swift in Sources */,
 			);

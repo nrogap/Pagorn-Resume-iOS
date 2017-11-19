@@ -107,7 +107,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.73725490196078436" green="0.72156862745098038" blue="0.69411764705882351" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ActivityCellIdentifier" rowHeight="174" id="f4k-6h-CiO" customClass="ActivityListTableViewCell" customModule="Pagorn_Resume_iOS" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="activityCellIdentifier" rowHeight="174" id="f4k-6h-CiO" customClass="ActivityListTableViewCell" customModule="Pagorn_Resume_iOS" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="174"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="f4k-6h-CiO" id="o8b-AX-LIm">
@@ -205,13 +205,13 @@
         <!--Work Exp.-->
         <scene sceneID="NuN-7q-4dE">
             <objects>
-                <tableViewController id="H8C-dU-uZT" sceneMemberID="viewController">
+                <tableViewController id="H8C-dU-uZT" customClass="WorkExpListTableViewController" customModule="Pagorn_Resume_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Z8o-dU-SK9">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.73725490199999999" green="0.72156862749999995" blue="0.69411764710000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ActivityCellIdentifier" rowHeight="230" id="JFp-f1-YgO" customClass="ActivityListTableViewCell" customModule="Pagorn_Resume_iOS" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="workExpCellIdentifier" rowHeight="230" id="JFp-f1-YgO" customClass="WorkExpListTableViewCell" customModule="Pagorn_Resume_iOS" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="230"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="JFp-f1-YgO" id="Xu4-Kd-Bvp">
@@ -293,6 +293,14 @@
                                         <constraint firstAttribute="bottom" secondItem="vj9-aw-CY5" secondAttribute="bottom" constant="16" id="zth-wl-PDa"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="labelCompany" destination="wRW-cn-Xal" id="ZuY-JS-8M5"/>
+                                    <outlet property="labelDate" destination="N9E-rf-Yif" id="hG2-Do-WJz"/>
+                                    <outlet property="labelEvent" destination="LzJ-Eo-K1b" id="rZN-Fx-sJx"/>
+                                    <outlet property="labelPosition" destination="9AQ-iE-bzd" id="74Z-7T-gSn"/>
+                                    <outlet property="viewSideCard" destination="Uxa-GD-rCo" id="7Ch-HZ-Edt"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
