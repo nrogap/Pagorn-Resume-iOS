@@ -219,11 +219,10 @@
                                             <rect key="frame" x="0.0" y="0.0" width="167" height="179"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0q7-f4-a7W" customClass="UICircularProgressRingView" customModule="UICircularProgressRing">
-                                                    <rect key="frame" x="30" y="58" width="106" height="106"/>
+                                                    <rect key="frame" x="25.5" y="56" width="115" height="115"/>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="106" id="O9V-Tg-CXu"/>
-                                                        <constraint firstAttribute="width" constant="106" id="eGT-0o-4az"/>
+                                                        <constraint firstAttribute="width" secondItem="0q7-f4-a7W" secondAttribute="height" multiplier="1:1" id="Q7u-jH-rbW"/>
                                                     </constraints>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="maxValue">
@@ -270,7 +269,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Java" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cW5-2E-xSV">
-                                                    <rect key="frame" x="66" y="37" width="35" height="21"/>
+                                                    <rect key="frame" x="66" y="35" width="35" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="1nh-fe-6EJ"/>
                                                     </constraints>
@@ -284,7 +283,8 @@
                                                 <constraint firstItem="vET-C8-Msu" firstAttribute="top" secondItem="Gqe-IW-IMW" secondAttribute="top" constant="8" id="BCg-Vz-eFc"/>
                                                 <constraint firstItem="cW5-2E-xSV" firstAttribute="centerX" secondItem="Gqe-IW-IMW" secondAttribute="centerX" id="F0h-Hp-2K5"/>
                                                 <constraint firstItem="0q7-f4-a7W" firstAttribute="centerX" secondItem="Gqe-IW-IMW" secondAttribute="centerX" id="OIs-aa-wz3"/>
-                                                <constraint firstItem="cW5-2E-xSV" firstAttribute="top" secondItem="vET-C8-Msu" secondAttribute="bottom" constant="2" id="P8H-cX-l9R"/>
+                                                <constraint firstAttribute="bottom" secondItem="0q7-f4-a7W" secondAttribute="bottom" constant="8" id="P7c-DX-lvJ"/>
+                                                <constraint firstItem="cW5-2E-xSV" firstAttribute="top" secondItem="vET-C8-Msu" secondAttribute="bottom" id="P8H-cX-l9R"/>
                                                 <constraint firstItem="vET-C8-Msu" firstAttribute="centerX" secondItem="Gqe-IW-IMW" secondAttribute="centerX" id="gOC-6y-6Ue"/>
                                                 <constraint firstItem="0q7-f4-a7W" firstAttribute="top" secondItem="cW5-2E-xSV" secondAttribute="bottom" id="xY2-aY-6Ek"/>
                                             </constraints>
