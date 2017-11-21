@@ -16,7 +16,7 @@ class SkillCollectionViewController: UICollectionViewController {
     
     fileprivate let itemsPerRow: CGFloat = 2
     
-    fileprivate let sectionInsets = UIEdgeInsets(top: 50.0, left: 20.0, bottom: 50.0, right: 20.0)
+    fileprivate let sectionInsets = UIEdgeInsets(top: 25.0, left: 20.0, bottom: 20.0, right: 20.0)
     
     lazy var viewModel: SkillViewModel = {
         return SkillViewModel(apiService: APIService())
@@ -137,28 +137,37 @@ class SkillCollectionViewController: UICollectionViewController {
 }
 
 extension SkillCollectionViewController : UICollectionViewDelegateFlowLayout {
-    //1
+    
     func collectionView(_ collectionView: UICollectionView,
                         layout collectionViewLayout: UICollectionViewLayout,
                         sizeForItemAt indexPath: IndexPath) -> CGSize {
-        //2
+       
         
         
         let paddingSpace = sectionInsets.left * (itemsPerRow + 1)
         let availableWidth = view.frame.width - paddingSpace
         let widthPerItem = availableWidth / itemsPerRow
         
-        return CGSize(width: widthPerItem, height: widthPerItem)
+        var cellHeight: CGFloat = 0
+        
+        if view.frame.height > 700 {
+            cellHeight = (view.frame.height - paddingSpace) / (itemsPerRow + 2)
+        } else {
+            cellHeight = (view.frame.height - paddingSpace) / (itemsPerRow + 1)
+        }
+
+        
+        return CGSize(width: widthPerItem, height: cellHeight)
     }
     
-    //3
+
     func collectionView(_ collectionView: UICollectionView,
                         layout collectionViewLayout: UICollectionViewLayout,
                         insetForSectionAt section: Int) -> UIEdgeInsets {
         return sectionInsets
     }
     
-    // 4
+    
     func collectionView(_ collectionView: UICollectionView,
                         layout collectionViewLayout: UICollectionViewLayout,
                         minimumLineSpacingForSectionAt section: Int) -> CGFloat {
